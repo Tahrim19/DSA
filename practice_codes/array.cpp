@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-// LINEAR AND BINARY SEARCH 
+// SEARCHING: 
 
 void linear(int arr[], int size, int key){
     for(int i = 0 ; i<size; i++){
@@ -34,6 +34,8 @@ void binary(int arr[] , int size , int key){
     cout<<"Not Found!";
 }
 
+// SORTING
+
 void print(int arr[] , int size){
     for(int i=0; i<size; i++){
         cout<< arr[i] << " ";
@@ -41,27 +43,33 @@ void print(int arr[] , int size){
 
 }
 
+
+
 int main(){
-    int n , key;
-    cout<<"Enter the size of array: ";
-    cin>> n;
+    // int n , key;
+    // cout<<"Enter the size of array: ";
+    // cin>> n;
     
-    int arr[n];
-    cout<<"Enter the elements of array: ";
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
+    // int arr[n];
+    // cout<<"Enter the elements of array: ";
+    // for(int i=0; i<n; i++){
+    //     cin>>arr[i];
+    // }
 
-    cout<<"Enter the element to be searched: ";
-    cin>>key;
+    // cout<<"Enter the element to be searched: ";
+    // cin>>key;
 
-    linear(arr, n, key);
-    print(arr , n);
-    cout<<endl;
-    sort(arr , arr + n);
-    print(arr , n);
-    cout<<endl;
-    binary(arr,n,key);
+    // linear(arr, n, key);
+    // print(arr , n);
+    // cout<<endl;
+    // sort(arr , arr + n);
+    // print(arr , n);
+    // cout<<endl;
+    // binary(arr,n,key);
+
+    int array[10] = {23,56,89,34,12,77,34,90,57,61};
+    // int n = sizeof(array) / sizeof(array[0]);
+    // print(array , n);
 
     return 0;
 }
